@@ -14,8 +14,8 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
-  final emailCtrl = TextEditingController(text: 'widi@mail.com');
-  final passCtrl = TextEditingController(text: '12341234');
+  final emailCtrl = TextEditingController();
+  final passCtrl = TextEditingController();
 
   @override
   void initState() {

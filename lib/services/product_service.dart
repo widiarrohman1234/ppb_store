@@ -19,7 +19,7 @@ class ProductService {
 
   Future<void> createProduct(Product product) async {
     final res = await NetworkClient.post('/api/products', product.toJson());
-    if (res.statusCode != 201) {
+    if (res.statusCode != 200) {
       throw Exception('Gagal menambahkan produk');
     }
   }

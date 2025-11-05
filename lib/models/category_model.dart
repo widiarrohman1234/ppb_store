@@ -4,7 +4,12 @@ class Category {
   final String documentId;
   final String? description;
 
-  Category({required this.id, required this.name, required this.documentId, this.description});
+  Category({
+    required this.id,
+    required this.name,
+    required this.documentId,
+    this.description,
+  });
 
   factory Category.fromJson(Map<String, dynamic> json) {
     return Category(
@@ -13,5 +18,10 @@ class Category {
       name: json['name'] ?? '',
       description: json['description'],
     );
+  }
+  @override
+  String toString() {
+    // Kembalikan representasi string yang ingin Anda lihat di konsol
+    return 'Category(id: $id, documentId: $documentId, name: $name, description: $description)';
   }
 }

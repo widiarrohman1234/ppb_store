@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../models/product_model.dart';
 import '../../viewmodels/auth_viewmodel.dart';
 import '../../viewmodels/product_viewmodel.dart';
 import '../auth/login_page.dart';
@@ -75,7 +74,7 @@ class _ProductListPageState extends State<ProductListPage> {
                     child: ListTile(
                       title: Text(product.name),
                       subtitle: Text(
-                        '${product.description ?? '-'}\nStok: ${product.stock} | Aktif: ${product.available}',
+                        '${product.description ?? '-'}\nStok: ${product.stock} | Aktif: ${product.available} | Category: ${product.category_name}',
                       ),
                       isThreeLine: true,
                       trailing: PopupMenuButton<String>(

@@ -112,6 +112,7 @@ class _ProductFormPageState extends State<ProductFormPage> {
                   if (_formKey.currentState!.validate()) {
                     final product = Product(
                       id: widget.product?.id ?? 0,
+                      id_category: _selectedCategory!.documentId,
                       documentId: widget.product?.documentId ?? '',
                       name: _nameCtrl.text,
                       description: _descCtrl.text,
