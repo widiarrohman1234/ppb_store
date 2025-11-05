@@ -27,7 +27,7 @@ flutter:
   assets:
     - assets/icon/icon.png
 
-
+# dart run flutter_launcher_icons
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
